@@ -8,7 +8,7 @@ import os
 import sys
 
 def create_directory_structure(input_file):
-    with open(input_file, 'r') as f:
+    with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
     group_name = lines[0].strip()
